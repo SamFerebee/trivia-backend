@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_08_061539) do
+ActiveRecord::Schema.define(version: 2021_03_08_170304) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2021_03_08_061539) do
     t.integer "user_difficulty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "lives_remaining"
     t.index ["category_id"], name: "index_games_on_category_id"
     t.index ["user_id"], name: "index_games_on_user_id"
   end
@@ -43,6 +44,7 @@ ActiveRecord::Schema.define(version: 2021_03_08_061539) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "correct_answer"
+    t.string "the_question"
     t.index ["category_id"], name: "index_questions_on_category_id"
   end
 

@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  resources :games
-  resources :questions
-  resources :categories
-  resources :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  ###USER ROUTES
+  get "/users", to: "users#index"
+  post "/users", to: "users#create"
+  delete "/users", to: "users#destroy"
+
+  ###CATEGORY
+  get "/categories", to: "categories#index"
+
+  ###GAME
+  post "/games", to: "games#create"
+
 end
