@@ -30,7 +30,7 @@ Question.create(category: geography, the_question: "What is the smallest country
 Question.create(category: geography, the_question: "Where can you find the 'Spanish Steps'?", point_value: 7, answer1: "Rome", answer2: "Barcelona", answer3: "Paris", answer4: "Madrid", correct_answer: "Rome", hint: "The name is deceiving")
 
 ######FOOD QUESTIONS
-Question.create(category: food, the_question: "Almonds are considered seeds or nuts?", point_value: 6, answer1:"True", answer2: "False", answer3: "Neither", answer4: "Fruits", correct_answer: "True", hint: "To be a fruit it must contain seeds")
+Question.create(category: food, the_question: "What are almonds considered?", point_value: 6, answer1:"Seeds", answer2: "Nuts", answer3: "Both", answer4: "Fruits", correct_answer: "Seeds", hint: "To be a fruit it must contain seeds")
 Question.create(category: food, the_question: "What was the first food eaten in space?", point_value: 10, answer1: "Banana", answer2: "Applesauce", answer3: "Apple", answer4: "Chocolate chip cookie", correct_answer: "Applesauce", hint: "It was sweet, but not that sweet")
 Question.create(category: food, the_question: "In what country did French Fries originate?", point_value: 7, answer1: "France", answer2: "The USA", answer3: "Argentina", answer4: "Belgium", correct_answer: "Belgium", hint: "The name may be a bit of a misnomer")
 Question.create(category: food, the_question: "Many red candies get their color from carmine, which is obtained from: ", point_value: 8, answer1: "Boiled beetles", answer2: "Food coloring", answer3: "Red apple skins", answer4: "Chicken blood", correct_answer: "Boiled beetles", hint: "We are sorry for providing you with this information")
