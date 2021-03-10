@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   patch "/users/game/final", to: "users#final_game_info"
   get "/users/:id/scores", to: "users#get_user_scores"
   patch "/users/:id/edit", to: "users#edit"
+  delete "users/:id/deletescore/:score_value", to: "users#delete_score"
 
 
   ###CATEGORY

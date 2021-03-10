@@ -54,6 +54,12 @@ class UsersController < ApplicationController
         render json: @all_scores
     end
 
+    def delete_score
+        @user = User.find(params[:id])
+        @the_game = @user.games.find_by(score: params[:score_value])
+        @the_game.destroy
+    end
+
     def edit
         @user = User.find(params[:id])
         @user.update(username: params[:newName])
