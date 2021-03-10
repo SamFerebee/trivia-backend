@@ -1,5 +1,22 @@
 class UsersController < ApplicationController
-    
+
+    def show
+        @user = User.find(params[:id])
+        render json: @user
+    end
+
+    def all_scores
+        @all_games = []
+        User.all.each do |user|
+            user.games.each do |game|
+                @all_games.push(game.score)
+            end
+        end
+        @all_games.sort!.reverse!
+        @all_games.slice!(5, @all_games.length)
+        render json: @all_games
+    end
+
     def index
         @users = User.all
         render json: @users
