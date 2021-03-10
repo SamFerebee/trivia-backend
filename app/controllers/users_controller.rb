@@ -7,14 +7,17 @@ class UsersController < ApplicationController
 
     def all_scores
         @all_games = []
+        @names_scores = {}
         User.all.each do |user|
+            @names_scores[user.username] = []
             user.games.each do |game|
-                @all_games.push(game.score)
+                @names_scores[user.username].push(game.score)
             end
         end
-        @all_games.sort!.reverse!
-        @all_games.slice!(5, @all_games.length)
-        render json: @all_games
+        ##@all_games.sort!.reverse!
+        ##@all_games.slice!(5, @all_games.length)
+        #@names_scores.sort_by {|k, v| v}
+        render json: @names_scores
     end
 
     def index
@@ -32,7 +35,7 @@ class UsersController < ApplicationController
     end
 
     def destroy
-        @user = User.find(params["user_id"])
+        @user = User.find(params[:id])
         @user.destroy
     end
 
@@ -43,7 +46,7 @@ class UsersController < ApplicationController
     end
 
     def get_user_scores
-        @user = User.find(params[:user])
+        @user = User.find(params[:id])
         @all_scores = []
         @user.games.each do |game|
             @all_scores.push(game.score)
@@ -52,7 +55,7 @@ class UsersController < ApplicationController
     end
 
     def edit
-        @user = User.find(params[:userId])
+        @user = User.find(params[:id])
         @user.update(username: params[:newName])
     end
 
