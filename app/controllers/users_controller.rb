@@ -79,5 +79,3 @@ class UsersController < ApplicationController
         params.require(:user).permit(:username)
     end
 end
-
-
