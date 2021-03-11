@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/users/:id/scores", to: "users#get_user_scores"
   patch "/users/:id/edit", to: "users#edit"
   delete "users/:id/deletescore/:score_value", to: "users#delete_score"
+  get "/users/change/:newName", to:"users#change_account"
 
 
   ###CATEGORY

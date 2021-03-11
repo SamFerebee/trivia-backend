@@ -5,6 +5,16 @@ class UsersController < ApplicationController
         render json: @user
     end
 
+    def change_account
+        @new_user = User.find_by(username: params[:newName])
+        render json: @new_user
+    end
+
+    def index
+        @users = User.all.pluck("username")
+        render json: @users
+    end
+
     def high_scores
         @all_games = []
         User.all.each do |user|
