@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   ###USER ROUTES
   get "/users", to: "users#index"
   get "/users/:id", to: "users#show"
-  get "/allscores", to: "users#all_scores"
+  get "/highscores", to: "users#high_scores"
   post "/users", to: "users#create"
   delete "users/:id", to: "users#destroy"
   patch "/users/game/final", to: "users#final_game_info"

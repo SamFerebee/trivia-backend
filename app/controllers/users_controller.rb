@@ -5,19 +5,16 @@ class UsersController < ApplicationController
         render json: @user
     end
 
-    def all_scores
+    def high_scores
         @all_games = []
-        @names_scores = {}
         User.all.each do |user|
-            @names_scores[user.username] = []
             user.games.each do |game|
-                @names_scores[user.username].push(game.score)
+                @all_games.push(game)
             end
         end
-        ##@all_games.sort!.reverse!
-        ##@all_games.slice!(5, @all_games.length)
-        #@names_scores.sort_by {|k, v| v}
-        render json: @names_scores
+        @all_games.sort_by!{|game| game.score}.reverse!
+        @all_games.slice!(5, @all_games.length)
+        render json: @all_games
     end
 
     def index
@@ -51,6 +48,8 @@ class UsersController < ApplicationController
         @user.games.each do |game|
             @all_scores.push(game.score)
         end
+        @all_scores.sort!.reverse!
+        @all_scores.slice!(5, @all_scores.length)
         render json: @all_scores
     end
 
@@ -70,3 +69,5 @@ class UsersController < ApplicationController
         params.require(:user).permit(:username)
     end
 end
+
+
