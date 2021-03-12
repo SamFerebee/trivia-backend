@@ -18,6 +18,14 @@ Question.create(category: sports, the_question: "What is the only NFL team to ne
 Question.create(category: sports, the_question: "What is Wilt Chamberlain's record for most points scored in a single game?", point_value: 5, answer1: "90", answer2: "104", answer3: "110", answer4: "100", correct_answer: "100", hint: "It ends with a '0")
 Question.create(category: sports, the_question: "Who was the NFL player who changed his name to match his jersey number?", point_value: 6, answer1: "Chad Johnson", answer2: "Terrel Owens", answer3: "Tiki Barber", answer4: "Peyton Manning", correct_answer: "Chad Johnson", hint: "It wasn't a quarterback")
 
+Question.create(category: sports, the_question: "The Olympics are held every how many years?", point_value: 1, answer1: "1", answer2: "2", answer3: "4", answer4: "8", correct_answer: "4", hint: "Answer % 2 === 0")
+Question.create(category: sports, the_question: "How often does the National Football League's 'Super Bowl' occur?", point_value: 1, answer1: "Every year", answer2: "Every 2 years", answer3: "Every 4 years", answer4: "Twice a year", correct_answer: "Every year", hint: "The Super Bowl started in 1967, and the most recent was Super Bowl LV")
+Question.create(category: sports, the_question: "Set in 1962, what basketball star holds the NBA record for most points in a single game?", point_value: 2, answer1: "Shaquille O'Neal", answer2: "Oscar Robertsons", answer3: "Michael Jordan", answer4: "Wilt Chamberlain", correct_answer: "Wilt Chamberlain", hint: "Not all of these men played in 1962")
+Question.create(category: sports, the_question: "Known as 'The King' what professional driver ended his career with a record 200 NASCAR wins?", point_value: 3, answer1: "Richard Petty", answer2: "Dale Earnhardt", answer3: "David Pearson", answer4: "Bobby Allison", correct_answer: "Richard Petty", hint: "Surprise! no hint. You still lose points though.")
+Question.create(category: sports, the_question: "What is the distance between the wickets in a game of cricket?", point_value: 3, answer1: "18 yards", answer2: "32 yard", answer3: "22 yards", answer4: "26 yards", correct_answer: "22 yards", hint: "Surprise! no hint. You still lose points though.")
+Question.create(category: sports, the_question: "What is the official national sport of Cuba?", point_value: 5, answer1: "Soccer", answer2: "Volleyball", answer3: "Baseball", answer4: "Boxing", correct_answer: "Baseball", hint: "The first game of this sport played in Cuba was in 1874")
+
+
 ######MUSIC QUESTIONS
 Question.create(category: music, the_question: "What singer has had a Billboard No. 1 hit in each of the last 3 decades?", point_value: 8, answer1: "Janet Jackson", answer2: "Mariah Carey", answer3: "Whitney Houston", answer4: "Britney Spears", correct_answer: "Mariah Carey", hint: "Oh baby baby we belong together")
 Question.create(category: music, the_question: "Who was the first American Idol Winner?", point_value: 5, answer1: "Clay Aiken", answer2: "Ruben Studdard", answer3: "Kelly Clarkson", answer4: "Kris Allen", correct_answer: "Kelly Clarkson", hint: "This person now has their own TV show")
@@ -30,6 +38,11 @@ Question.create(category: music, the_question: "Which Super Bowl Halftime Show p
 Question.create(category: music, the_question: "What does Lady Gaga affectionately call her fans?", point_value: 8, answer1: "Little Monsters", answer2: "The Fanatics", answer3: "The Crazies", answer4: "fans", correct_answer: "Little Monsters", hint: "It's not the most boring answer")
 Question.create(category: music, the_question: "Who sang the Spongebob theme song for the movie?", point_value: 10, answer1: "Avril Lavigne", answer2: "Selena Gomez", answer3: "Miley Cyrus", answer4: "Britney Spears", correct_answer: "Avril Lavigne", hint: "It's (not) Britney b****")
 Question.create(category: music, the_question: "What was the first music video to ever air on MTV?", point_value: 10, answer1: "Video Killed the Radio Star", answer2: "Forgot about Dre", answer3: "Psycho Killer", answer4: "Maps", correct_answer: "Video Killed the Radio Star", hint: "Killing was involved")
+
+Question.create(category: music, the_question: "What pop star wrote songs for Ariana Grande, Miley Cyrus, Britney Spears, and Alice Cooper? ", point_value: 8, answer1: "Kesha", answer2: "Mariah Carey", answer3: "Justin Beiber", answer4: "Beyonce", correct_answer: "Kesha", hint: "Tik Tok- not the app")
+Question.create(category: music, the_question: "Which Artist's entire 1985 Live Aid set consisted of just a single cover song?", point_value: 8, answer1: "Queen", answer2: "Prince", answer3: "Elvis Costello", answer4: "Elton John", correct_answer: "Elvis Costello", hint: "Thank you very much")
+Question.create(category: music, the_question: "What pop star wrote songs for Ariana Grande, Miley Cyrus, Britney Spears, and Alice Cooper? ", point_value: 8, answer1: "Kesha", answer2: "Mariah Carey", answer3: "Justin Beiber", answer4: "Beyonce", correct_answer: "Kesha", hint: "Tik Tok- not the app")
+Question.create(category: music, the_question: "Before Miley Cyrus recorded Wrecking Ball, it was offered to which singer?", point_value: 8, answer1: "Alicia Keys", answer2: "Billie Eillish", answer3: "Beyonce", answer4: "Katy Perry", correct_answer: "Beyonce", hint: "Surprise! no hint. You still lose points though.")
 
 
 ######MOVIES QUESTIONS
@@ -45,6 +58,11 @@ Question.create(category: movies, the_question: "What Hollywood star plays humse
 Question.create(category: movies, the_question: "Who is the only actor to receive an Oscar nomination for their role in a Lord of a Rings movie?", point_value: 6, answer1: "Elijah Wood", answer2: "Ian McKellen", answer3: "Orlando Bloom", answer4: "Viggo Mortensen", correct_answer: "Ian McKellen", hint: "He wears a hat")
 Question.create(category: movies, the_question: "What is the highest grossing R-tated movie of all time?", point_value: 8, answer1: "Joker", answer2: "The Shining", answer3: "The Sixth Sense", answer4: "The Godfather 2", correct_answer: "Joker", hint: "This movie is nothing to joke about")
 
+
+
+Question.create(category: movies, the_question: "The head of what kind of animal is front-and-center in an infamous scene from The Godfather?", point_value: 8, answer1: "Dog", answer2: "Cat", answer3: "Rabbit", answer4: "Horser", correct_answer: "Horse", hint: "They like to go big.")
+Question.create(category: movies, the_question: "What Hollywood movie star plays himself in Zombieland?", point_value: 8, answer1: "Tom Hanks", answer2: "Adam Sandler", answer3: "Bill Murray", answer4: "Kevin Bacon", correct_answer: "Bill Murray", hint: "He likes to golf")
+Question.create(category: movies, the_question: "In Risky Business, what song did Tom Cruise famously lip-sync to in his underwear?", point_value: 8, answer1: "Brad Pitt", answer2: "Tom Cruise", answer3: "Leonardo DiCaprio", answer4: "Matt Damon", correct_answer: "Tom Cruise", hint: "He is a spy in his free time.")
 ######GEOGRAPHY QUESTIONS
 Question.create(category: geography, the_question: "China has how many time zones?", answer1: "3", answer2: "6", answer3: "1", answer4: "4", point_value: 6, correct_answer: "1", hint: "Big country with not as many time zones as you'd think")
 Question.create(category: geography, the_question: "How many deserts are there in Europe?", point_value: 4, answer1: "0", answer2: "7", answer3: "3", answer4: "11", correct_answer: "0", hint: "It's either more or fewer than you think")
