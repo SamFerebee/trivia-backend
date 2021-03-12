@@ -54,13 +54,16 @@ class UsersController < ApplicationController
 
     def get_user_scores
         @user = User.find(params[:id])
-        @all_scores = []
+        @all_games = []
         @user.games.each do |game|
-            @all_scores.push(game.score)
+             @all_games.push(game)
         end
-        @all_scores.sort!.reverse!
-        @all_scores.slice!(5, @all_scores.length)
-        render json: @all_scores
+        # @all_scores.sort!.reverse!
+        # @all_scores.slice!(5, @all_scores.length)
+        # render json: @all_scores
+        @all_games.sort_by!{|game| game.score}.reverse!
+        @all_games.slice!(5, @all_games.length)
+        render json: @all_games
     end
 
     def delete_score
